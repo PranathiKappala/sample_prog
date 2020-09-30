@@ -48,12 +48,12 @@ const initialState = {
 const employeeReducer=(state=initialState,action)=>{
 
   switch(action.type){
-  case(FETCH_EMPLOYEE_REQUEST):
+  case FETCH_EMPLOYEE_REQUEST:
   return{
     ...state,
     loading:true
   }
-  case(FETCH_EMPLOYEE_SUCCESS):
+  case FETCH_EMPLOYEE_SUCCESS:
   return {
       ...state,
       loading: false,
